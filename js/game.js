@@ -65,6 +65,7 @@ TopDownGame.Game.prototype = {
 	},
 	collect: function(player, collectable) {
 		collectable.destroy();
+		setTimeout(function(){alert('You Win!')},500);
 	},
 	render: function() {
 
