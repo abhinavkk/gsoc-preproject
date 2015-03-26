@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="38" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="simple" tilewidth="16" tileheight="16">
+  <image source="../../phaser-2.2.2/simples_pimples.png" width="800" height="1280"/>
+ </tileset>
+ <layer name="backgroundLayer" width="50" height="38">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6GTVf/K5mIvSFg1VVVVVVVVVd8fNbKfsA==
+  </data>
+ </layer>
+ <layer name="blockedLayer" width="50" height="38">
+  <properties>
+   <property name="collision" value="1"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzVldEKwjAMRffgj/sn/VQREWZJck+Szm2BQXVpek97m23bJ56P7dbx1v99VJ41dnJH9BR1uvP2DFmOqq6DOMKamTOo6LH2gp7jpO3nnbGmOSZaM76qnNGsZ/aW5zXPf8RfV+Lw5hMt4NyjuUhb1veEI9ujonyq718cmd52JQ6V8/2teCP/KP9370eGw67mr1c5H9jD5DfgDI5MkJqUI9OXIr9UYiVHd031/VC+ugqHlZfhADkhB/1mZL2k8sh5UI5pzj4P6VJ7G0WHQ9Qdu3FYU2mKeoM3B4zHZkTUk1dydM5m5qDPvLbqv1nGDkcnoprV+57pwWdwkN5JtIk1x37s+YnWt3Rn5tF1Ig5jnvtO6VnBoTxG95zcb9Jz5hpZDq+Wp9XQfjiH4jqKoxMVnzV6wnDGuN9He1jhILnG++GMy/2U5Ef1CUfH99370gmyJx09/+Sg/1e4yJ2s9jdSg3rI+o/4PLOWtya9g1kOGqs5ovoqf6Xvoz2OzpZwKM1Hcag8eie78ys9764cLyBegp4=
+  </data>
+ </layer>
+ <objectgroup name="objectsLayer" width="50" height="38">
+  <properties>
+   <property name="collision" value="0"/>
+  </properties>
+  <object gid="77" x="737" y="575">
+   <properties>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object gid="3759" x="63" y="81">
+   <properties>
+    <property name="sprite" value="diamond"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
