@@ -7,7 +7,7 @@ TopDownGame.Boot.prototype = {
 		this.load.image('preload', 'images/preload.png');
 	},
 	create: function() {
-		this.game.stage.backgroundColor = '#fff';
+		this.game.stage.backgroundColor = '#000';
 		this.game.physics.startSystem(Phaser.Physics.ARCADE);
 		this.state.start('Preload');
 	}
