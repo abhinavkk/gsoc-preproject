@@ -9,11 +9,12 @@ TopDownGame.Game.prototype = {
 		this.blockedLayer = this.map.createLayer('blockedLayer');
 		this.map.setCollisionBetween(1, 250, true, 'blockedLayer');
 		this.blockedLayer.resizeWorld();
-		this.createItems();
+		this.createItems(); 
 
 		var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
 		this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
 		this.game.physics.arcade.enable(this.player);
+		this.player.body.collideWorldBounds = true;
 		this.game.camera.follow(this.player);
 
 		this.cursors = this.game.input.keyboard.createCursorKeys();
